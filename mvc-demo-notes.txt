@@ -1,0 +1,14 @@
+mvc demo notes
+
+@Controller, // announce this is a spring mvc controller
+@Controller inherits from @Component, so when doing component scanning, @Controllers will also be picked up
+@RequestMapping
+
+Spring Model
+Model is a container for your application data 
+
+@RequestParam
+
+Spring MVC Form Tags 
+@Model Attributes // which enable us to perform 
+Data Binding
