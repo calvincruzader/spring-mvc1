@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
+
 public class Customer {
 
 	private String firstName;
@@ -20,7 +22,7 @@ public class Customer {
 	@Max(value=10, message="cannot have more than 10 free passes")
 	private Integer freePasses;
 	
-//	@CourseCode(value="", message="")
+	@CourseCode(value="TOPS", message="must start with TOPS")
 	private String courseCode;
 	
 	//Regex validation
@@ -54,6 +56,12 @@ public class Customer {
 	}
 	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 }

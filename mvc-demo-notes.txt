@@ -28,3 +28,6 @@ typeMismatch.customer.freePasses=Invalid Number // errorType.SpringModelAttribut
 
 -----
 custom validations, custom java annotation!
+@Constraint
+@Target
+@Retention
