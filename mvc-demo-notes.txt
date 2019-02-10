@@ -25,3 +25,6 @@ BindingResult parameter has to immediately follow the modelAttribute
 typeMismatch.customer.freePasses=Invalid Number // errorType.SpringModelAttributeName.fieldName=custom_message , we're basically customizing the error message types we get back 
 
 - error code debugging in CustomerController
+
+-----
+custom validations, custom java annotation!

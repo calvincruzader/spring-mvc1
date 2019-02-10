@@ -20,6 +20,9 @@ public class Customer {
 	@Max(value=10, message="cannot have more than 10 free passes")
 	private Integer freePasses;
 	
+//	@CourseCode(value="", message="")
+	private String courseCode;
+	
 	//Regex validation
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 chars/digits for the postal code")
 	public String postalCode; 
