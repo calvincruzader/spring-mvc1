@@ -12,3 +12,16 @@ Model is a container for your application data
 Spring MVC Form Tags 
 @Model Attributes // which enable us to perform 
 Data Binding
+
+------
+Spring validation rules
+@NotNull
+
+BindingResult parameter has to immediately follow the modelAttribute
+@Init Binder, validator that processes request input as it comes in 
+@Min and @Max for numeric ranges 
+@Pattern(regexp="my_pattern", message) for regex!
+
+typeMismatch.customer.freePasses=Invalid Number // errorType.SpringModelAttributeName.fieldName=custom_message , we're basically customizing the error message types we get back 
+
+- error code debugging in CustomerController
